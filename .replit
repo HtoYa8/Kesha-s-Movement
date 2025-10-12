@@ -1,0 +1,3 @@
+modules = ["java-21"]
+[agent]
+expertMode = true
