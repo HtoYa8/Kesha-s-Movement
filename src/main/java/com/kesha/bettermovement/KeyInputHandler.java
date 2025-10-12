@@ -7,9 +7,10 @@ import java.util.Map;
 
 public class KeyInputHandler {
     private final Map<String, Long> keyPressTimes = new HashMap<>();
+    private long pressCounter = 0;
     
     public void recordKeyPress(String keyName) {
-        keyPressTimes.put(keyName, System.currentTimeMillis());
+        keyPressTimes.put(keyName, System.nanoTime() + (pressCounter++));
     }
     
     public void clearKeyPress(String keyName) {

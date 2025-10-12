@@ -75,16 +75,16 @@ public class KeyboardInputMixin {
         if (forwardPressed && backPressed) {
             if (handler.shouldSuppressKey("forward", "back")) {
                 input.movementForward = -1.0F;
-            } else {
+            } else if (handler.shouldSuppressKey("back", "forward")) {
                 input.movementForward = 1.0F;
             }
         }
         
         if (leftPressed && rightPressed) {
             if (handler.shouldSuppressKey("left", "right")) {
-                input.movementSideways = 1.0F;
-            } else {
                 input.movementSideways = -1.0F;
+            } else if (handler.shouldSuppressKey("right", "left")) {
+                input.movementSideways = 1.0F;
             }
         }
     }
