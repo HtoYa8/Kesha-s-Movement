@@ -23,7 +23,7 @@ public class BetterMovementMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         instance = this;
-        LOGGER.info("Initializing Kesha's BetterMovement Mod");
+        LOGGER.info("Initializing Kesha's Movement Mod");
         
         config = new ModConfig();
         config.load();

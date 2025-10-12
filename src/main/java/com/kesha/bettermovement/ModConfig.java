@@ -12,7 +12,7 @@ public class ModConfig {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CONFIG_PATH = FabricLoader.getInstance()
         .getConfigDir()
-        .resolve("bettermovement.json");
+        .resolve("Kesha's-movement.json");
     
     private boolean enabled = true;
     

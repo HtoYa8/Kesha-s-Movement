@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "bettermovement",
   "version": "${version}",
-  "name": "Kesha's BetterMovement",
+  "name": "Kesha's Movement",
   "description": "A mod that changes movement key behavior to prioritize the last pressed key instead of combining them.",
   "authors": [
     "Kesha"
@@ -12,7 +12,7 @@
     "sources": ""
   },
   "license": "MIT",
-  "icon": "assets/bettermovement/icon.png",
+  "icon": "icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
